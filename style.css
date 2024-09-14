@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bree Serif;
+}
+/* body {
+  background-color: #454657;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+} */
+/* General form styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Form container */
+.container {
+  width: 450px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form input fields */
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="number"], select {
+  width: 100%;
+  padding: 10px;
+  padding-left: 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #5e9ce6;
+}
+
+input[type="submit"], button {
+  width: 100%;
+  padding: 10px;
+  background-color: #5e9ce6;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover, button:hover {
+  background-color: #4a87c5;
+}
+
+/* Icons inside input fields */
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #aaa;
+}
+
+/* Select field container */
+.select-container select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+select:focus {
+  border-color: #5e9ce6;
+}
+
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.password-container {
+  position: relative;
+}
+
+.password-container input[type="checkbox"] {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  cursor: pointer;
+}
+.password-container .show-password-label {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.password-container input[type="text"] ~ .show-password-label {
+  display: block;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+
+  input, select {
+    font-size: 14px;
+  }
+}
